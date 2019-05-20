@@ -1,0 +1,119 @@
+body {
+    font-family: verdana;
+    background-color: powderblue;
+    font-size: 1.5 rem;
+}
+
+header {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+div {
+    color:black;
+}
+
+.blockContainer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blockA {
+    padding: 0.5rem;
+    text-align: justify;
+    width: 25%;
+    background-color: rgb(192,192,192);
+    border: 1px solid black;
+    margin: 0px 15px 30px 15px;
+}
+
+.blockB {
+    padding: 0.5rem;
+    text-align: justify;
+    width: 25%;
+    background-color: rgb(128,128,128);
+    border: 1px solid black;
+    margin: 0px 15px 30px 15px;
+}
+
+.blockC {
+    padding: 0.5rem;
+    text-align: justify;
+    width: 25%;
+    background-color: rgb(64,64,64);
+    border: 1px solid black;
+    margin: 0px 15px 30px 15px;
+}
+
+.hdrA{
+    text-align: right;
+    color: white;
+    background-color: rgb(128,0,128);
+    border: 1px solid black;
+}
+.hdrB{
+    text-align: right;
+    color: white;
+    background-color: rgb(128,0,128);
+    border: 1px solid black;
+}
+.hdrC{
+    text-align: right;
+    color: white;
+    background-color: rgb(128,0,128);
+    border: 1px solid black;
+}
+
+/********** Desktop devices only **********/
+@media (max-width: 2000px) {
+    body {
+      background-color: red;
+    }
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+      background-color: green;
+    }
+    .blockContainer{
+        width: 100%;
+        display: initial;
+    }
+    .blockA {
+        float: left;
+        width: 45%;
+        margin-right: 0%;
+    }
+    .blockB {
+        float: right;
+        width: 45%;
+        margin-left: 0%;
+    }
+    .blockC {
+        float: left;
+        width: 95%;
+    }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+    body {
+      background-color: blue;
+    }
+    .blockContainer{
+        flex-direction: column;
+    }
+    .blockA{
+        width: 95%;
+    }
+    .blockB{
+        width: 95%;
+    }
+    .blockC{
+        width: 95%;
+    }
+}
