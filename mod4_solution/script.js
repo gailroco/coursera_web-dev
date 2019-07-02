@@ -52,13 +52,13 @@ WARNING!!! WARNING!!!
     // to lower case character 'j' afterwards.
     // Look up these methods on Mozilla Developer Network web site if needed.
     // var firstLetter =
-    var firstLetter = names[i].charAt(0).toUpperCase();
+    var firstLetter = names[i].charAt(0).toLowerCase();
     // STEP 12:
     // Compare the 'firstLetter' retrieved in STEP 11 to lower case
     // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
     // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
     // name in the loop.
-    if (firstLetter === 'J'/* fill in condition here */) {
+    if (firstLetter === 'j'/* fill in condition here */) {
       // byeSpeaker.xxxx
         byeSpeaker.speak(names[i]);
     } else {
